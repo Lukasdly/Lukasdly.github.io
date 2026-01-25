@@ -1160,8 +1160,9 @@ input, select, textarea {
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 			background-image: url("../../images/eso1723a.jpg");
 			background-position: center;
-			background-size: cover;
-			background-repeat: no-repeat;
+			background-size: cover;      
+			background-repeat: no-repeat; 
+			
 			z-index: 1;
 		}
 
@@ -1659,3 +1660,4 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
