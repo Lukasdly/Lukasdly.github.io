@@ -1160,9 +1160,9 @@ input, select, textarea {
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 			background-image: url("../../images/eso1723a.jpg");
 			background-position: center;
-			background-size: cover;      
-			background-repeat: no-repeat; 
-			
+			background-size: cover;
+			background-repeat: no-repeat;
+
 			z-index: 1;
 		}
 
@@ -1661,3 +1661,39 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+        body:not(.is-article-visible) {
+            overflow: hidden;
+        }
+
+        body:not(.is-article-visible) #wrapper {
+            justify-content: center;
+        }
+
+        body:not(.is-article-visible) #wrapper:before {
+            display: none;
+        }
+
+        body:not(.is-article-visible) #footer {
+            position: absolute;
+            bottom: 4rem; /* Aligns with the wrapper's desktop padding-bottom */
+            left: 0;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 1680px) {
+            body:not(.is-article-visible) #footer {
+                bottom: 3rem;
+            }
+        }
+
+        @media screen and (max-width: 736px) {
+            body:not(.is-article-visible) #footer {
+                bottom: 2rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            body:not(.is-article-visible) #footer {
+                bottom: 1rem;
+            }
+        }
