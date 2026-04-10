@@ -1674,25 +1674,20 @@ input, select, textarea {
         }
 
         body:not(.is-article-visible) #footer {
-            position: absolute;
-            bottom: 4rem; /* Aligns with the wrapper's desktop padding-bottom */
+            position: fixed;
+            bottom: 2rem;
             left: 0;
             width: 100%;
+            z-index: 10;
         }
 
         @media screen and (max-width: 1680px) {
             body:not(.is-article-visible) #footer {
-                bottom: 3rem;
+                bottom: 1.5rem;
             }
         }
 
         @media screen and (max-width: 736px) {
-            body:not(.is-article-visible) #footer {
-                bottom: 2rem;
-            }
-        }
-
-        @media screen and (max-width: 480px) {
             body:not(.is-article-visible) #footer {
                 bottom: 1rem;
             }
