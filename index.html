@@ -18,7 +18,7 @@
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
         </script>
 <style>
-            /* 1. Empêche les éléments du menu de se superposer */
+
             #header nav ul {
                 display: flex;
                 flex-wrap: wrap;
@@ -28,22 +28,20 @@
                 flex: 0 0 auto;
             }
 
-            /* 2. Patch pour le centrage et la suppression du scroll à 100% */
             body:not(.is-article-visible) {
-                overflow-y: auto !important; /* Autorise le scroll uniquement si nécessaire */
+                overflow-y: auto !important;
             }
 
             body:not(.is-article-visible) #wrapper {
                 display: flex !important;
                 flex-direction: column !important;
-                /* On force la hauteur à 100vh mais on soustrait le padding total (4rem) pour éviter le dépassement */
+
                 min-height: calc(100vh - 4rem) !important;
                 height: auto !important;
                 padding: 2rem 0 !important;
                 justify-content: center !important;
             }
 
-            /* Détache le footer pour qu'il soit positionné naturellement */
             body:not(.is-article-visible) #footer {
                 position: relative !important;
                 bottom: auto !important;
@@ -120,7 +118,10 @@
                         </button>
                     </div>
                 </article>
-
+                    <div class="logos-container">
+                        <img src="images/logo-obs2-original-848f765fe7.png" alt="Observatory logo" class="research-logo">
+                        <img src="images/ASIDF-Fr2030_logo_ligne_RVB-1.png" alt="Agency logo" class="research-logo">
+                    </div>
                 <article id="research">
                     <h2 class="major">Research</h2>
 

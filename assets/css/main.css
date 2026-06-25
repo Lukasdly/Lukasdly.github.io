@@ -1692,3 +1692,36 @@ input, select, textarea {
                 bottom: 1rem;
             }
         }
+
+        .logos-container {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 1.5rem;
+            z-index: 3;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 1.5rem;
+            border-radius: 4px;
+        }
+
+        #main:has(#research.active) .logos-container {
+            display: flex;
+        }
+
+        .research-logo {
+            height: 50px;
+            width: auto;
+        }
+
+        @media screen and (max-width: 480px) {
+            .logos-container {
+                gap: 15px;
+                padding: 1rem;
+            }
+            .research-logo {
+                height: 40px;
+            }
+}
+
