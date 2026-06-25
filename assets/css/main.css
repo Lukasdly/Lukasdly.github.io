@@ -1710,8 +1710,13 @@ input, select, textarea {
             display: flex;
         }
 
-        .research-logo {
-            height: 50px;
+        .logo-obs {
+            height: 60px;
+            width: auto;
+        }
+
+        .logo-agency {
+            height: 45px;
             width: auto;
         }
 
@@ -1720,8 +1725,8 @@ input, select, textarea {
                 gap: 15px;
                 padding: 1rem;
             }
-            .research-logo {
+            .logo-obs, .logo-agency {
                 height: 40px;
             }
-}
+        }
 
