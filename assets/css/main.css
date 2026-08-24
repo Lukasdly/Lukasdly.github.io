@@ -1552,6 +1552,10 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+			#main article#research {
+				width: 70rem;
+			}
+
 			#main article.active {
 				-moz-transform: translateY(0);
 				-webkit-transform: translateY(0);
